@@ -26,7 +26,8 @@ import org.springframework.context.annotation.Import;
 public class RedisApplication implements CommandLineRunner {
 	    
     private static final int MEASURE_COUNT = 10000;
-	@Autowired
+	
+    @Autowired
     RedisSimpleRepository<String, MeasureData> repository;
     
     @Override
